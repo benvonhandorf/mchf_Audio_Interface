@@ -1,0 +1,244 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L BVH_Connectors_Misc:AudioJack4_SwitchTR J1
+U 1 1 60441095
+P 1950 1950
+F 0 "J1" H 1882 2375 50  0000 C CNN
+F 1 "MIC" H 1882 2284 50  0000 C CNN
+F 2 "BVH_Connectors_Misc:SJ-43515RS-SMT-TR" H 1900 1950 50  0001 C CNN
+F 3 "~" H 1900 1950 50  0001 C CNN
+	1    1950 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L BVH_Connectors_Misc:AudioJack4_SwitchTR J2
+U 1 1 60442159
+P 1950 2950
+F 0 "J2" H 1882 3375 50  0000 C CNN
+F 1 "PHONE" H 1882 3284 50  0000 C CNN
+F 2 "BVH_Connectors_Misc:SJ-43515RS-SMT-TR" H 1900 2950 50  0001 C CNN
+F 3 "~" H 1900 2950 50  0001 C CNN
+	1    1950 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L BVH_Connectors_Misc:AudioJack4_SwitchTR J5
+U 1 1 60442B79
+P 4700 1950
+F 0 "J5" H 4320 1833 50  0000 R CNN
+F 1 "PTT" H 4320 1924 50  0000 R CNN
+F 2 "BVH_Connectors_Misc:SJ-43515RS-SMT-TR" H 4650 1950 50  0001 C CNN
+F 3 "~" H 4650 1950 50  0001 C CNN
+	1    4700 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L BVH_Connectors_Misc:AudioJack4_SwitchTR J6
+U 1 1 604437E7
+P 4700 3100
+F 0 "J6" H 4320 2983 50  0000 R CNN
+F 1 "Headset" H 4320 3074 50  0000 R CNN
+F 2 "BVH_Connectors_Misc:SJ-43515RS-SMT-TR" H 4650 3100 50  0001 C CNN
+F 3 "~" H 4650 3100 50  0001 C CNN
+	1    4700 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 60444A4E
+P 2600 1750
+F 0 "#PWR03" H 2600 1500 50  0001 C CNN
+F 1 "GND" H 2605 1577 50  0000 C CNN
+F 2 "" H 2600 1750 50  0001 C CNN
+F 3 "" H 2600 1750 50  0001 C CNN
+	1    2600 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 60444FC3
+P 2750 2750
+F 0 "#PWR04" H 2750 2500 50  0001 C CNN
+F 1 "GND" H 2755 2577 50  0000 C CNN
+F 2 "" H 2750 2750 50  0001 C CNN
+F 3 "" H 2750 2750 50  0001 C CNN
+	1    2750 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 60445EC6
+P 4200 2150
+F 0 "#PWR06" H 4200 1900 50  0001 C CNN
+F 1 "GND" H 4205 1977 50  0000 C CNN
+F 2 "" H 4200 2150 50  0001 C CNN
+F 3 "" H 4200 2150 50  0001 C CNN
+	1    4200 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 6044688E
+P 4000 3200
+F 0 "#PWR05" H 4000 2950 50  0001 C CNN
+F 1 "GND" H 4005 3027 50  0000 C CNN
+F 2 "" H 4000 3200 50  0001 C CNN
+F 3 "" H 4000 3200 50  0001 C CNN
+	1    4000 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 2150 4500 2150
+Wire Wire Line
+	2600 1750 2150 1750
+Wire Wire Line
+	2150 2750 2750 2750
+Text GLabel 2250 1950 2    50   Input ~ 0
+PTT
+Text GLabel 2250 2150 2    50   Input ~ 0
+MIC
+Text GLabel 2250 2950 2    50   Input ~ 0
+Audio_R
+Text GLabel 2250 3150 2    50   Input ~ 0
+Audio_L
+Wire Wire Line
+	2250 2950 2150 2950
+Wire Wire Line
+	2150 3150 2250 3150
+NoConn ~ 2150 2850
+NoConn ~ 2150 3050
+NoConn ~ 2150 1850
+NoConn ~ 2150 2050
+Wire Wire Line
+	2150 1950 2250 1950
+Wire Wire Line
+	2150 2150 2250 2150
+Text GLabel 4250 1750 0    50   Input ~ 0
+PTT
+Wire Wire Line
+	4250 1750 4500 1750
+Text GLabel 4400 3300 0    50   Input ~ 0
+MIC
+Wire Wire Line
+	4400 3300 4500 3300
+Wire Wire Line
+	4000 3200 4500 3200
+Text GLabel 4400 3100 0    50   Input ~ 0
+Audio_R
+Wire Wire Line
+	4400 3100 4500 3100
+Text GLabel 4400 2900 0    50   Input ~ 0
+Audio_L
+Wire Wire Line
+	4400 2900 4500 2900
+NoConn ~ 4500 3000
+NoConn ~ 4500 2050
+NoConn ~ 4500 1950
+NoConn ~ 4500 1850
+$Comp
+L Connector_Generic:Conn_01x03 J4
+U 1 1 60451CCF
+P 2050 3850
+F 0 "J4" H 1968 3525 50  0000 C CNN
+F 1 "PHONE_CONN" H 1968 3616 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2050 3850 50  0001 C CNN
+F 3 "~" H 2050 3850 50  0001 C CNN
+	1    2050 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 60452DB8
+P 2500 3950
+F 0 "#PWR02" H 2500 3700 50  0001 C CNN
+F 1 "GND" H 2505 3777 50  0000 C CNN
+F 2 "" H 2500 3950 50  0001 C CNN
+F 3 "" H 2500 3950 50  0001 C CNN
+	1    2500 3950
+	1    0    0    -1  
+$EndComp
+Text GLabel 2450 3750 2    50   Input ~ 0
+Audio_L
+Text GLabel 2450 3850 2    50   Input ~ 0
+Audio_R
+Wire Wire Line
+	2450 3850 2250 3850
+Wire Wire Line
+	2250 3750 2450 3750
+Wire Wire Line
+	2250 3950 2500 3950
+$Comp
+L Connector_Generic:Conn_01x03 J3
+U 1 1 604558A4
+P 2000 1150
+F 0 "J3" H 1918 825 50  0000 C CNN
+F 1 "MIC_CONN" H 1918 916 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2000 1150 50  0001 C CNN
+F 3 "~" H 2000 1150 50  0001 C CNN
+	1    2000 1150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 604558AA
+P 2450 1250
+F 0 "#PWR01" H 2450 1000 50  0001 C CNN
+F 1 "GND" H 2455 1077 50  0000 C CNN
+F 2 "" H 2450 1250 50  0001 C CNN
+F 3 "" H 2450 1250 50  0001 C CNN
+	1    2450 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 1150 2200 1150
+Wire Wire Line
+	2200 1050 2400 1050
+Wire Wire Line
+	2200 1250 2450 1250
+Text GLabel 2400 1150 2    50   Input ~ 0
+PTT
+Text GLabel 2400 1050 2    50   Input ~ 0
+MIC
+$Comp
+L Switch:SW_SPST SW1
+U 1 1 6045961A
+P 4150 1050
+F 0 "SW1" H 4150 1285 50  0000 C CNN
+F 1 "PTT" H 4150 1194 50  0000 C CNN
+F 2 "BVH_Switches:TacButton_12mm_12mm_LED-optional" H 4150 1050 50  0001 C CNN
+F 3 "~" H 4150 1050 50  0001 C CNN
+	1    4150 1050
+	1    0    0    -1  
+$EndComp
+Text GLabel 3800 1050 0    50   Input ~ 0
+PTT
+$Comp
+L power:GND #PWR07
+U 1 1 6045B05E
+P 4550 1050
+F 0 "#PWR07" H 4550 800 50  0001 C CNN
+F 1 "GND" H 4555 877 50  0000 C CNN
+F 2 "" H 4550 1050 50  0001 C CNN
+F 3 "" H 4550 1050 50  0001 C CNN
+	1    4550 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 1050 4350 1050
+Wire Wire Line
+	3950 1050 3800 1050
+$EndSCHEMATC
